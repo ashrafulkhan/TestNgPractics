@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="My Test Suite">
+    <test name="Firefox">
+
+
+            <!--
+            <class name="com.shiftedtech.qa.testng.cucumber.BDDRunnerTestNG"/>
+            -->
+            <!--
+            <class name="com.testScripts.TestScripts"/>
+            -->
+            <groups>
+                <define name="multigroupingExample">
+                    <include name="smoketest"></include>
+                    <include name="functionaltest"></include>
+                    <include name="smoketest"></include>
+                    <include name="regration"></include>
+                </define>
+                <run>
+                    <include name="multigroupingExample"></include>
+                </run>
+
+            </groups>
+        <classes>
+            <class name="GroupOFGrps"></class>
+
+        </classes>
+    </test>
+
+
+
+</suite>
